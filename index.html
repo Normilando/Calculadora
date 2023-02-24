@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="corpo">
+            <h1 id="tela"></h1>
+            <div class="numeros">
+                <button id="um" onclick="one()">1</button>
+                <button id="dois" onclick="two()">2</button>
+                <button id="tres" onclick="three()">3</button>
+                <button id="quatro" onclick="four()">4</button>
+                <button id="cinco" onclick="five()">5</button>
+                <button id="seis" onclick="six()">6</button>
+                <button id="sete" onclick="seven()">7</button>
+                <button id="oito" onclick="eight()">8</button>
+                <button id="nove" onclick="nine()">9</button>
+                <button id="zero" onclick="zero()">0</button>
+                <button id="igual" onclick="equal()">=</button>
+            </div>
+            <div class="simbolos">
+                <button id="mais" onclick="plus()">+</button>
+                <button id="menos" onclick="minus()">-</button>
+                <button id="divisao" onclick="division()">/</button>
+                <button id="vezes" onclick="multiply()">*</button>
+            </div>
+        </div>
+    </main>
+    <script src="calcular.js"></script>
+</body>
+</html>

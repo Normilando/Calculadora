@@ -1,0 +1,90 @@
+@font-face {
+    font-family: digital-7;
+    src: url(/fonts/digital-7.mono.ttf);
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/imagens/mesa\ grande.jpg);
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo {
+    background-color: gray;
+    max-width: 680px;
+    display: grid;
+    margin-top: 10rem;
+}
+
+#tela {
+    color: white;
+    font-family: digital-7;
+    background-color: black;
+    margin: 1.5rem;
+    padding: 2rem;
+    text-align: end;
+    grid-column: 1 / 3;
+}
+
+.numeros {
+    display: grid;
+    grid-template-columns:6rem 6rem 6rem;
+    justify-content: center;
+    margin: 1.5rem;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: brown;
+}
+
+#zero {
+    grid-column: 2/2;
+}
+
+.simbolos {
+    display: grid;
+    margin: 1.5rem;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #00BA95;
+    justify-content: center;
+}
+
+button {
+    height: 2.7rem;
+    width: 5rem;
+    background-color: #EDECEC;
+    border-width: 0.16rem;
+    border-color: black;
+}
+
+button:hover {
+    background-color: #E0DBDB;
+    transition-duration: 0.4s;
+}
+
+@media (max-width: 680px) {
+    #tela {
+        margin: 1rem;
+        padding: 2rem;
+
+    }
+    
+    .numeros {
+        margin: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .simbolos {
+        margin: 1rem;
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
