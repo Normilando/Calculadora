@@ -57,5 +57,5 @@ function multiply() {
 }
 
 function equal() {
-    
+    return tela.textContent = "";
 }
