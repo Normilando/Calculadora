@@ -36,7 +36,7 @@ body {
 .numeros {
     display: grid;
     grid-template-columns:6rem 6rem 6rem;
-    justify-content: center;
+    align-items: center;
     margin: 1.5rem;
     gap: 1rem;
     padding: 2rem;
@@ -70,9 +70,14 @@ button:hover {
 }
 
 @media (max-width: 680px) {
+    .corpo {
+        max-width: 480px;
+    }
+
     #tela {
         margin: 1rem;
-        padding: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
 
     }
     
@@ -80,11 +85,18 @@ button:hover {
         margin: 1rem;
         gap: 1rem;
         padding: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
     }
     
     .simbolos {
         margin: 1rem;
         gap: 1rem;
         padding: 1rem;
+    }
+
+    button {
+        height: 2rem;
+        width: 3rem;
     }
 }
